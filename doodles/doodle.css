@@ -1,0 +1,151 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80%;
+  max-height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+
+canvas {
+   background-color: white;
+}
+
+* Style the canvas container */
+.canvas-container {
+  flex: 3; /* Grow to take available space */
+  display: flex;
+  justify-content: center; /* Center the canvas horizontally */
+  align-items: center; /* Center the canvas vertically */
+  overflow: hidden; /* Hide any overflow content */
+  background-color: white; /* Match the canvas background color */
+}
+
+/* Set the canvas size to fit the viewport */
+canvas {
+  max-width: 100%; /* Make the canvas responsive */
+  max-height: 100vh; /* Set maximum height to viewport height */
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  color: rgb(30, 30, 30);
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-right: 12px; /* Add some space between the buttons */
+  align-items: normal;
+}
+
+button:hover {
+  background-color: #a1caf6;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+button-container button {
+  margin: 0 1px; /* Adjust margin for horizontal spacing */
+}
+
+/* Style the color picker and slider */
+input[type="color"], input[type="range"] {
+  margin-right: 10px; /* Add some space between the input elements */
+}
+
+/* Style the "row-one" container and center its contents */
+#row-one {
+  height: 100%;
+  background-color: #fad063;
+  text-align: center;
+  justify-content: center; 
+  padding: 10px; /* Add padding to the container */
+}
+
+/* Adjust the size of the color picker */
+#row-one input[type="color"] {
+width: 100px; /* Set the width as needed */
+height: 50px; /* Set the height as needed */
+}
+
+.class1 {
+background-color: #f0f0f0;
+}
+
+/* Style the brushSizeSlider */
+
+/* Style the brushSizeSlider */
+.custom-slider::-webkit-slider-thumb {
+align-items: center;
+background-color: #004B90; /* Change the color of the thumb */
+border: 10px; /* Remove the default border */
+width: 40px; /* Set the width of the thumb */
+height: 40px; /* Set the height of the thumb */
+border-radius: 50%; /* Create a circular thumb */
+cursor: pointer;
+}
+
+.custom-slider::-moz-range-thumb {
+background-color: #004B90;
+width: 60px;
+height: 150px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.custom-slider::-moz-range-track {
+background-color: #004B90;
+height: 16px;
+border-radius: 5px;
+}
+
+.custom-slider::-webkit-slider-runnable-track {
+background-color: #9FCCF5; /* Change the color of the track (background bar) */
+height: 16px;
+width: 150px; /* Set the height of the track */
+border-radius: 10px;
+}
+
+.logo-container {
+flex: 1; /* Grow to take available space */
+display: flex;
+align-items: flex-start; /* Align items to the left */
+padding-left: 10px; /* Add some left padding for spacing */
+}
+
+#brush-icon {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
+
+#eraser-icon {
+  width: 30px;
+  height: 30px;
+}
+
+#clear-icon {
+  width: 30px;
+  height:30px;
+}
+
+#save-icon {
+  width: 30px;
+  height: 30px;
+}
